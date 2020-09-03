@@ -74,7 +74,7 @@ def record(duration,outdir="."):
     outfilename = datetime.datetime.now().strftime("%m-%d-%Y-%H-%M-%S") + ".h264"
 
     # Start Recording
-    camera.start_recording(outfilename)
+    camera.start_recording(outdir+"/"+outfilename)
 
     # record for duration
     time.sleep(duration)
@@ -83,4 +83,4 @@ def record(duration,outdir="."):
     camera.stop_recording()
 
 if __name__ == "__main__":
-    main(pir_pin=2,duration=60)
+    main(pir_pin=2,duration=60,outdir="/media/pi/OKAY")
