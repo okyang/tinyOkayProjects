@@ -23,43 +23,40 @@ def arduinoPirSense(pir_pin=2):
     connection = SerialManager() #SerialManager(device='/dev/ttyUSB0')
     a = ArduinoApi(connection=connection)
     a.pinMode(pir_pin, a.INPUT)
+    result = a.digitalRead(pir_pin)
+    connection.close()
     return a.digitalRead(pir_pin)
 
-def main(pir_pin=2,duration=10,outdir="."):
+def main(pir_pin=2,inactiveDuration=10,outdir="."):
     """
     *Parameters*
     > `pir_pin<int>`: an int representing the GPIO signal pin (in BCM mode) of the PIR motion sensor
     """
-    # === define local parameters ==
-
-    # === set up GPIO ===
-    #GPIO.setmode(GPIO.BCM)
-    #GPIO.setup(pir_pin, GPIO.IN)
-
     # === start main loop ===
     while True:
         # === sense PIR motion ===
         motionDetected = arduinoPirSense(pir_pin)
         print(motionDetected)
 
-        # === conditional for motion capture ===
-        if motionDetected:
+        if  motionDetected:
+            # === conditional for motion capture ===
             print("started recording...")
             # === start recording ===
-            record(duration,outdir)
+            record(pir_pin,inactiveDuration,outdir)
             print("recording finished")
-        else:
-            pass
 
-def record(duration,outdir="."):
+
+def record(pir_pin,inactiveDuration,outdir="."):
     """
     Uses the Raspbery Pi v2 camera to record videos. Will automatically save files
     according to `outdir` and the datetimestamp.
 
     *Parameters*
-    > `duration<int>`: the number of seconds to record video
+    > `duration<int>`: the number of seconds to record inactive video
     > `outdir<str>`: the filepath directory to save the video file
     """
+    # Local Parameter 
+    motionDetected = True
 
     # Set-up camera
     camera.resolution = (1024,768)
@@ -76,11 +73,17 @@ def record(duration,outdir="."):
     # Start Recording
     camera.start_recording(outdir+"/"+outfilename)
 
-    # record for duration
-    time.sleep(duration)
+    while motionDetected:
+
+        # record for duration
+        time.sleep(inactiveDuration)
+
+        # detected motion
+        motionDetected = arduinoPirSense(pir_pin)
 
     # Stop Recording
     camera.stop_recording()
 
 if __name__ == "__main__":
-    main(pir_pin=2,duration=60,outdir="/media/pi/OKAY")
+    main(pir_pin=2,inactiveDuration=60,outdir="/media/pi/OKAY")
+ 
