@@ -1,6 +1,6 @@
-# Motion Activated Raspberry Pi Camera :camera: (with PIR and NanPy)
+# Motion Activated Raspberry Pi Camera :camera: (with PIR and Nanpy)
 
-This project records videos whenever there is any motion detected. This could be used as a security camera for your snacks, a backyard wildlife monitor, and more. My Raspberry Pi had some issues with its GPIO pins and I also learned that some specific sensors do not work well with the Pi. So I decided this was the perfect opportunity to also learn how to use NanPy, which allows the Raspberry Pi to use an Arduino's GPIO pins.
+This project records videos whenever there is any motion detected. This could be used as a security camera for your snacks, a backyard wildlife monitor, and more. My Raspberry Pi had some issues with its GPIO pins and I also learned that some specific sensors do not work well with the Pi. So I decided this was the perfect opportunity to also learn how to use Nanpy, which allows the Raspberry Pi to use an Arduino's GPIO pins.
 
 ## Materials
 - Raspberry Pi 3 B+
@@ -49,7 +49,7 @@ For me, my path was: `/home/pi/tinyOkayProjects/pir_activated_cam`
 > During this step you will be prompted to enter the path of the folder. Use the path from step 1c. \
 > *This bash script will install xterminal, nanpy, and arduino. It will also setup dependent files that will allow you to run motion activated raspberry pi camera code on startup. To do this we use autostart (see resources below).* \
 > **f.**  Connect Arduino to Raspberry Pi and follow install instructions for Nanpy \
-> [NanPy Install Instructions](https://pypi.org/project/nanpy/#how-to-build-and-install)
+> [Nanpy Install Instructions](https://pypi.org/project/nanpy/#how-to-build-and-install)
 
 3. Setting location to save video Files
 > **a.** Open up "pir_activated_cam.py" with a editor such as IDLE or leafpad \
@@ -63,7 +63,12 @@ For me, my path was: `/home/pi/tinyOkayProjects/pir_activated_cam`
 ## Code Flow Chart
 ![chart](PIR Activated Cam.png)
 
-
 ## Resources
-- autostart
+(Raspberry Pi Camera)
+- https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/6
+- https://picamera.readthedocs.io/en/release-1.13/recipes1.html
+(Raspberry Pi Autostart)
+- https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all#method-2-autostart
+(Nanpy)
 - https://pypi.org/project/nanpy/
+- https://www.youtube.com/watch?v=QumIhvYtRKQ
