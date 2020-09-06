@@ -61,7 +61,7 @@ For me, my path was: `/home/pi/tinyOkayProjects/pir_activated_cam`
 > Once your code successfully runs in the xterminal, a `0` will be printed if there is no signal from the PIR motion sensor and a `"started recording..."` will print out if there is motion detected.
 
 ## Code Flow Chart
-![chart](PIR Activated Cam.png)
+![chart](https://github.com/okyang/tinyOkayProjects/blob/master/pir_activated_cam/PIR%20Activated%20Cam.png)
 
 
 ## Resources
