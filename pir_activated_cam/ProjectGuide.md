@@ -1,4 +1,4 @@
-# Motion Activated Raspberry Pi Camera :camera:
+# Motion Activated Raspberry Pi Camera :camera: with PIR and NanPy
 
 This project records videos whenever there is any motion detected. This could be used as a snacks stash security camera, a backyard wildlife monitor, and more. 
 
