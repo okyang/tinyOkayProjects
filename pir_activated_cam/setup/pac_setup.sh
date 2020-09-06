@@ -10,6 +10,11 @@ pip3 install nanPy -y
 echo "Done"
 echo
 
+echo "Installing Arduino"
+sudo apt-get install arduino -y
+echo "Done"
+echo
+
 echo "Making Dependent files"
 python3 makeDependentFiles.py
 echo "Done"
