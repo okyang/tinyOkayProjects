@@ -10,6 +10,11 @@ pip3 install nanPy -y
 echo "Done"
 echo
 
+echo "Making Dependent files"
+python3 makeDependentFiles.py
+echo "Done"
+echo
+
 
 echo "Setting up .desktop file"
 mkdir /home/pi/.config/autostart

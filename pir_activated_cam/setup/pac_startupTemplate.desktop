@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=PAC Startup
+Comment=running pir activated camera
+Exec=xterm -hold -e 'bash {}'
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Utility;Application

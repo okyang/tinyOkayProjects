@@ -16,9 +16,11 @@ from nanpy import ArduinoApi, SerialManager
 def main(pir_pin=2,inactiveDuration=10,outdir="."):
     """
     *Parameters*
-    > `pir_pin<int>`: an int representing the GPIO signal pin (in BCM mode) of the PIR motion sensor
+    > `pir_pin<int>`: the GPIO signal pin (in BCM mode) of the PIR motion sensor
+    > `inactiveDuaration<int>`: specifies when the camera should stop recording after no motion has been detected
+    > `outdir<str>`: the path to the desired directory of which to save the video files
     """
-    # === Local Variables === 
+    # === Local Variables ===
     camera = PiCamera()
 
     # === setup Arduino ===
@@ -65,4 +67,3 @@ def main(pir_pin=2,inactiveDuration=10,outdir="."):
 
 if __name__ == "__main__":
     main(pir_pin=2,inactiveDuration=60,outdir="/media/pi/OKAY")
-
