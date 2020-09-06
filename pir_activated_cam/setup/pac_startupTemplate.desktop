@@ -2,7 +2,7 @@
 Version=1.0
 Name=PAC Startup
 Comment=running pir activated camera
-Exec=xterm -hold -e 'bash {}'
+Exec=xterm -hold -e 'bash {}/runFromStartup.sh'
 Terminal=false
 StartupNotify=true
 Type=Application
