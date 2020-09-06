@@ -64,11 +64,13 @@ For me, my path was: `/home/pi/tinyOkayProjects/pir_activated_cam`
 ![chart](https://github.com/okyang/tinyOkayProjects/blob/master/pir_activated_cam/PIR%20Activated%20Cam.png)
 
 ## Resources
-(Raspberry Pi Camera) \
+(Raspberry Pi Camera)
 - https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/6
 - https://picamera.readthedocs.io/en/release-1.13/recipes1.html
-(Raspberry Pi Autostart) \
+
+(Raspberry Pi Autostart)
 - https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all#method-2-autostart
-(Nanpy) \
+
+(Nanpy)
 - https://pypi.org/project/nanpy/
 - https://www.youtube.com/watch?v=QumIhvYtRKQ
