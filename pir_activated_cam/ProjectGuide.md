@@ -2,9 +2,10 @@
 
 This project records videos whenever there is any motion detected. This could be used as a security camera for your snacks, a backyard wildlife monitor, and more. My Raspberry Pi had some issues with its GPIO pins and I also learned that some specific sensors do not work well with the Pi. So I decided this was the perfect opportunity to also learn how to use Nanpy, which allows the Raspberry Pi to use an Arduino's GPIO pins.
 
-![]()
-![]()
-![]()
+
+![](https://github.com/okyang/tinyOkayProjects/blob/master/images/demo.gif)
+
+*Figure 1. Demo of recording after PIR detects motion from my fingers*
 
 ## Materials
 - Raspberry Pi 3 B+
@@ -67,6 +68,15 @@ For me, my path was: `/home/pi/tinyOkayProjects/pir_activated_cam`
 ## Code Flow Chart
 ![chart](https://github.com/okyang/tinyOkayProjects/blob/master/images/PIR%20Activated%20Cam.png)
 
+*Figure 2.*
+
+## Sample Setup
+I made this really ugly setup with cardboard, standoffs, and paint. Definitely not pretty, but hopefully a good reference for how I put everything together or if you are just curious. 
+
+![](https://github.com/okyang/tinyOkayProjects/blob/master/images/hacky_setup_picture2.jpg)
+![](https://github.com/okyang/tinyOkayProjects/blob/master/images/hacky_setup_picture.jpg)
+
+*Figure 4. (Top) Exterior view, (Bottom) Interior View*
 ## Resources
 (Raspberry Pi Camera)
 - https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/6
