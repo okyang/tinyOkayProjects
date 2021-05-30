@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="35.511543mm"
+   height="30.814856mm"
+   viewBox="0 0 35.511543 30.814856"
+   version="1.1"
+   id="svg306"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="heart_cutout.svg">
+  <defs
+     id="defs300" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="15.679859"
+     inkscape:cy="-56.052917"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1267"
+     inkscape:window-height="1040"
+     inkscape:window-x="182"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata303">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-101.6847,-162.99733)">
+    <path
+       id="path2-6-6-9"
+       d="m 110.19532,163.01727 c -4.46627,0.15793 -8.63948,4.1081 -8.50757,8.67812 -0.0978,4.46708 2.31045,8.52918 5.15166,11.79938 3.55367,4.14971 8.08616,7.28022 12.58052,10.31742 5.92152,-3.8196 11.78343,-8.19382 15.50741,-14.3042 2.11167,-3.31275 3.09146,-7.68019 1.43115,-11.3862 -1.9731,-4.6215 -8.41358,-6.64497 -12.59342,-3.77416 -1.32617,0.78149 -2.08525,2.17149 -2.98001,3.34876 -1.39098,0.83631 -3.26386,-0.0873 -3.8018,-1.53028 -1.47049,-2.18343 -4.19591,-3.3372 -6.78794,-3.14884 z" />
+  </g>
+</svg>
