@@ -26,6 +26,7 @@ I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) ab
 - Box Cutter
 - Paint Brushes
 - Soldering Iron
+- Hot Glue
 
 ## How it works
 
@@ -70,14 +71,28 @@ cond(yes)->op_close1->op_close2->op2
 cond(no)->op_open1->op2
 ```
 
-### 🖨 3D Printing the Game Pieces
+### 🖨 3D Printing and Setting up the Game Pieces
 
 All game pieces are located in the folder `operation_game/game_pieces`.
 
 1. Print out all `*.stl` files on a 3D printer.
-    1. I recommend using 15% infill.
-1.
+    1. I used 15% infill
+2. Tape copper tape around all the edges of the lip pieces (`*lip.stl` files)
+3. Tape copper tape around
 
 All `*.svg` files are the 2D drawings of each game piece. You can use these files to modify
 
-### Assembling the Board
+### 🎮 Assembling the Game Board
+
+1. Hot Glue 2 pieces of cardboard together and draw your patient
+2. In my case I have Panda Bear from We Bare Bears
+3. Trace out cutouts with a pencil using the lip pieces (`*lip.stl` files)
+    1. make sure you trace the inside of the lip and not the outside. That way you can hot glue your lip pieces to the board
+4. Cut out your traces using a box cuter
+5. Hot glue the lip pieces to the cutouts you just made
+6. Connect copper tape from all the lip pieces to the bottom right corner of the board
+7. Solder together the joints of the copper tape
+9. Solder a stranded wire (about 12" is a good amount) to the bottom right corner of the board
+10. (Optional) Using a multimeter, use the continuity test to check that everything is connected to each other
+
+### 🔨 Putting it All Together
