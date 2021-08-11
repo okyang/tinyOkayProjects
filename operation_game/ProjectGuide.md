@@ -1,4 +1,5 @@
 # Operation Game
+*IMPORTANT NOTE: Please be safe and responsible. Follow proper instructions of the TENS unit. Everything you do is at your own risk and I am not responsible.*
 
 I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) about Allen Pan from Sufficiently Advanced, building the game operation with it twist. It shocks you every-time you mess up. I thought it would be fun to build my own version of it, so here we go.
 
@@ -38,15 +39,47 @@ In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added hi
 
 ## Steps
 
+### 🎮 Assembling the Game Board
+
+1. Hot Glue 2 pieces of cardboard together and draw your patient 👨‍⚕️
+    1. In my case I have Panda Bear from We Bare Bears 🐼
+2. Trace out cutout holes with a pencil using the inside of the lip pieces (`*lip.stl` files)
+    1. make sure you trace the inside of the lip and not the outside. That way you can hot glue your lip pieces to the board
+3. Cut out your traces using a box cuter
+4. Hot glue the lip pieces to the cutouts you just made
+5. Connect copper tape from all the lip pieces to the bottom right corner of the board
+6. Solder together the joints of the copper tape
+7. Solder a stranded wire (about 12" is a good amount) to the bottom right corner of the board
+8. (Optional) Using a multimeter, use the continuity test to check that everything is connected to each other
+
+### 🛠 Making the Tweezers
+1. Strip some stranded wire so that the exposed wires can wrap around part of the tweezers
+2. Copper tape the exposed stranded wire in place on the tweezers
+3. Strip the other end of the wire and cover it with a small amount of solder (this will be connected to the circuit)
+
 ### ⚡ Building the Circuit
+
+Here is the schematic for the game. It consists of 3 basic components:
+1. The Arduino Nano, which is the brains of this operation.
+2. The board + tweezers that will act as a switch. If the tweezers touch a part of the board it will close the connection and complete the circuit.
+3. The relays which will allow the TENS unit to shock the players.  
+
+![Operation Game Circuit](../images/operation_shock_circuit.png)
+
+To build the circuit follow these steps:
+1. Solder together the circuit in the circuit diagram for the Tweezers, board, and the Arduino Nano
+2. Connect wires from the Arduino Nano to the Relays as shown in the circuit diagram
+3. Splice the Tens unit probe red wires so that it can connect to the relays as shown in the circuit diagram
 
 ### 💻 Coding
 1. Open up your Arduino IDE.
 2. Open up `operation_game/shock_operation/shock_operation.ino` or just copy the code from it
 3. Make sure it compiles. It should compile. If it doesn't, please submit a bug report.
 4. Connect your Arduino Nano
-5. Select the Arduino Nano Board
+5. Select the Arduino Nano Board in your IDE editor. Make sure you also select the correct port number!
 6. Upload the code to the Arduino Nano
+
+*If you don't understand these instructions above, perhaps more background on Arduino IDE may help. Visit [Arduino Software IDE Guide](https://www.arduino.cc/en/Guide/Environment#writing-sketches).*
 
 The code logic is represented in the flow chart below:
 
@@ -81,18 +114,5 @@ All game pieces are located in the folder `operation_game/game_pieces`.
 3. Tape copper tape around
 
 All `*.svg` files are the 2D drawings of each game piece. You can use these files to modify
-
-### 🎮 Assembling the Game Board
-
-1. Hot Glue 2 pieces of cardboard together and draw your patient
-2. In my case I have Panda Bear from We Bare Bears
-3. Trace out cutouts with a pencil using the lip pieces (`*lip.stl` files)
-    1. make sure you trace the inside of the lip and not the outside. That way you can hot glue your lip pieces to the board
-4. Cut out your traces using a box cuter
-5. Hot glue the lip pieces to the cutouts you just made
-6. Connect copper tape from all the lip pieces to the bottom right corner of the board
-7. Solder together the joints of the copper tape
-9. Solder a stranded wire (about 12" is a good amount) to the bottom right corner of the board
-10. (Optional) Using a multimeter, use the continuity test to check that everything is connected to each other
 
 ### 🔨 Putting it All Together
