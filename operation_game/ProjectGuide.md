@@ -116,3 +116,20 @@ All game pieces are located in the folder `operation_game/game_pieces`.
 All `*.svg` files are the 2D drawings of each game piece. You can use these files to modify
 
 ### 🔨 Putting it All Together
+
+1. Hot glue all the lip pieces to the Board
+
+![Pieces on Board]()
+
+2. Copper tape the lip pieces conductive edges, creating a path to the bottom right corner of the board, where all the connections should connect to the wire.
+
+![]()
+3. Connect the wire to the circuit
+
+
+### Let's Play
+1. Hook up the TENS unit to one arm
+2. Setup the game pieces in the holes
+3. Power on your Arduino
+4. Start playing by using the tweezers to pick out the game pieces
+5. Don't get shocked! 🙂
