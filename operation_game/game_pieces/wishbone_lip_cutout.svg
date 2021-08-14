@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.999954mm"
+   height="80.000282mm"
+   viewBox="0 0 59.999954 80.000282"
+   version="1.1"
+   id="svg401"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="wishbone_lip_cutout.svg">
+  <defs
+     id="defs395" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="167.67148"
+     inkscape:cy="345.46737"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1267"
+     inkscape:window-height="1040"
+     inkscape:window-x="130"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata398">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-61.470254,-56.761758)">
+    <path
+       id="rect264"
+       style="fill:#ff5555;stroke-width:0.333073"
+       d="M 61.470254,56.761758 V 136.76204 H 121.47021 V 56.761758 Z m 18.146686,9.280054 c 1.118526,0.0114 5.690314,0.467537 7.253314,7.03213 1.786281,7.50239 0.508608,14.008714 2.858214,15.957164 4.882515,4.04891 10.955792,6.549927 14.766552,11.670604 3.08671,4.14777 7.81222,17.19103 7.7406,19.05362 -0.11906,3.09624 -0.83352,3.57272 -2.97707,3.92999 -2.14354,0.35725 -6.07324,-4.2874 -12.384771,-17.50591 -6.311529,-13.218475 -11.789568,-2.97696 -12.265924,-1.42885 -0.47633,1.54811 -1.786388,6.7881 -0.476462,13.81414 1.309926,7.02605 2.381991,8.45474 0.11938,10.3601 -2.262637,1.90537 -7.740809,-1.42902 -9.527064,-10.7177 -1.786307,-9.28866 1.190784,-15.95746 2.977066,-20.36361 1.786281,-4.406172 0.238045,-8.81227 -0.476462,-16.910079 -0.714507,-8.097821 -2.858056,-13.813628 2.143548,-14.885397 0,0 0.0893,-0.0078 0.249079,-0.0062 z" />
+  </g>
+</svg>
