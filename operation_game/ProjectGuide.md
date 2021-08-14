@@ -50,6 +50,8 @@ Operation is very common board game where a player performs "operation" using a 
 
 ![Classic Operation Game](../images/classic_operation_game.jpeg)
 
+*Drawing Credit goes to Jonathan Chen*
+
 In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added his own twist to the game by including a TENS unit. This TENS unit would "shock" or electrically stimulate your muscle if your tweezers touches the board. I was inspired by that video to try to make my own version of it. It was a lot of fun making it and even more fun to play with friends. I think it also has a great team bonding aspect to it because if one person messes up, the other person who is hooked up to the TENS unit also gets shocked!
 
 ## Steps
