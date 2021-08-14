@@ -3,7 +3,7 @@
 
 I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) about Allen Pan from Sufficiently Advanced, building the game operation with it twist. It shocks you every-time you mess up. I thought it would be fun to build my own version of it, so here we go.
 
-![Board Game Image]()
+![Pieces on Board](../images/20210813_220608.jpg)
 
 ## Prerequisites
 - [Arduino IDE](https://www.arduino.cc/)
@@ -35,6 +35,8 @@ Operation is very common board game where a player performs "operation" using a 
 
 ![Classic Operation Game](../images/classic_operation_game.jpeg)
 
+*Drawing Credit goes to Jonathan Chen*
+
 In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added his own twist to the game by including a TENS unit. This TENS unit would "shock" or electrically stimulate your muscle if your tweezers touches the board. I was inspired by that video to try to make my own version of it. It was a lot of fun making it and even more fun to play with friends. I think it also has a great team bonding aspect to it because if one person messes up, the other person who is hooked up to the TENS unit also gets shocked!
 
 ## Steps
@@ -57,6 +59,8 @@ In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added hi
 2. Copper tape the exposed stranded wire in place on the tweezers
 3. Strip the other end of the wire and cover it with a small amount of solder (this will be connected to the circuit)
 
+![tweezers](../images/20210813_221004.jpg)
+
 ### ⚡ Building the Circuit
 
 Here is the schematic for the game. It consists of 3 basic components:
@@ -65,6 +69,8 @@ Here is the schematic for the game. It consists of 3 basic components:
 3. The relays which will allow the TENS unit to shock the players.  
 
 ![Operation Game Circuit](../images/operation_shock_circuit.png)
+
+![Actual Circuit](../images/20210813_224606.jpg)
 
 To build the circuit follow these steps:
 1. Solder together the circuit in the circuit diagram for the Tweezers, board, and the Arduino Nano
@@ -110,8 +116,10 @@ All game pieces are located in the folder `operation_game/game_pieces`.
 
 1. Print out all `*.stl` files on a 3D printer.
     1. I used 15% infill
-2. Tape copper tape around all the edges of the lip pieces (`*lip.stl` files)
-3. Tape copper tape around
+2. Tape copper tape around all the inner edges of the lip pieces (`*lip.stl` files)
+3. Tape copper tape around all the outer edges of the game pieces
+
+![](../images/20210813_220938.jpg)
 
 All `*.svg` files are the 2D drawings of each game piece. You can use these files to modify
 
@@ -119,11 +127,10 @@ All `*.svg` files are the 2D drawings of each game piece. You can use these file
 
 1. Hot glue all the lip pieces to the Board
 
-![Pieces on Board]()
-
 2. Copper tape the lip pieces conductive edges, creating a path to the bottom right corner of the board, where all the connections should connect to the wire.
 
-![]()
+![backside of the board](../images/20210814_114225.jpg)
+
 3. Connect the wire to the circuit
 
 
