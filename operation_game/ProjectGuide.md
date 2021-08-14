@@ -5,6 +5,21 @@ I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) ab
 
 ![Pieces on Board](../images/20210813_220608.jpg)
 
+*Drawing Credit goes to Jonathan Chen*
+
+* [Prerequisites](#prerequisites)
+* [🧻 Materials](#-materials)
+* [🔬 Equipment](#-equipment)
+* [How it works](#how-it-works)
+* [Steps](#steps)
+    + [🎮 Assembling the Game Board](#-assembling-the-game-board)
+    + [🛠 Making the Tweezers](#-making-the-tweezers)
+    + [⚡ Building the Circuit](#-building-the-circuit)
+    + [💻 Coding](#-coding)
+    + [🖨 3D Printing and Setting up the Game Pieces](#---3d-printing-and-setting-up-the-game-pieces)
+    + [🔨 Putting it All Together](#---putting-it-all-together)
+    + [Let's Play](#let-s-play)
+
 ## Prerequisites
 - [Arduino IDE](https://www.arduino.cc/)
 - Soldering Skills
@@ -34,8 +49,6 @@ I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) ab
 Operation is very common board game where a player performs "operation" using a metal tweezer to try to take out objects from a cardboard cutout of a person (see image below). However, if your tweezer touches the board, you lose!
 
 ![Classic Operation Game](../images/classic_operation_game.jpeg)
-
-*Drawing Credit goes to Jonathan Chen*
 
 In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added his own twist to the game by including a TENS unit. This TENS unit would "shock" or electrically stimulate your muscle if your tweezers touches the board. I was inspired by that video to try to make my own version of it. It was a lot of fun making it and even more fun to play with friends. I think it also has a great team bonding aspect to it because if one person messes up, the other person who is hooked up to the TENS unit also gets shocked!
 
