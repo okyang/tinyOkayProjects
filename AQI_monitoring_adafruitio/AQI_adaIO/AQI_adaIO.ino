@@ -21,7 +21,6 @@ directory as this file
 #include "Adafruit_MQTT_Client.h"
 
 
-
 // If your PM2.5 is UART only, for UNO and others (without hardware serial)
 // we must use software serial...
 // pin #2 is IN from sensor (TX pin on sensor), leave pin #3 disconnected
@@ -33,7 +32,7 @@ SoftwareSerial pmSerial(2, 3);
 Adafruit_PM25AQI aqi = Adafruit_PM25AQI();
 
 // setup distance feed
-AdafruitIO_Feed *aqi_feed = io.feed("air-quality-sensor.aqi");
+AdafruitIO_Feed *aqi_feed = io.feed(FEEDNAME);
 
 
 void setup() {
