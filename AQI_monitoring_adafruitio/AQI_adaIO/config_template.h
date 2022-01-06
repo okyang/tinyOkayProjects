@@ -3,6 +3,7 @@ Copy this template, replace with your credentials, and then rename the copy as "
 */
 #define IO_USERNAME   "<your_username>"
 #define IO_KEY        "<your_key_here>"
+#define FEEDNAME      "<your_feedname_here>"
 
 // wifi
 #define WIFI_SSID     "<your_wifi_ssd_here>"
