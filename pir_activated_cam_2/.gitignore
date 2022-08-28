@@ -1,0 +1,4 @@
+*.h264
+app.log
+my_secrets.py
+__pycache__
