@@ -3,7 +3,7 @@
 
 I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) about Allen Pan from Sufficiently Advanced, building the game operation with it twist. It shocks you every-time you mess up. I thought it would be fun to build my own version of it, so here we go.
 
-![Pieces on Board](../images/20210813_220608.jpg)
+![Pieces on Board](assets/20210813_220608.jpg)
 
 *Drawing Credit goes to Jonathan Chen*
 
@@ -48,7 +48,7 @@ I was watching a YouTube [video](https://www.youtube.com/watch?v=Kml6bc-URu4) ab
 
 Operation is very common board game where a player performs "operation" using a metal tweezer to try to take out objects from a cardboard cutout of a person (see image below). However, if your tweezer touches the board, you lose!
 
-![Classic Operation Game](../images/classic_operation_game.jpeg)
+![Classic Operation Game](assets/classic_operation_game.jpeg)
 
 In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added his own twist to the game by including a TENS unit. This TENS unit would "shock" or electrically stimulate your muscle if your tweezers touches the board. I was inspired by that video to try to make my own version of it. It was a lot of fun making it and even more fun to play with friends. I think it also has a great team bonding aspect to it because if one person messes up, the other person who is hooked up to the TENS unit also gets shocked!
 
@@ -72,18 +72,18 @@ In Allen Pan's [video](https://www.youtube.com/watch?v=Kml6bc-URu4), he added hi
 2. Copper tape the exposed stranded wire in place on the tweezers
 3. Strip the other end of the wire and cover it with a small amount of solder (this will be connected to the circuit)
 
-![tweezers](../images/20210813_221004.jpg)
+![tweezers](assets/20210813_221004.jpg)
 
 ### ⚡ Building the Circuit
 
 Here is the schematic for the game. It consists of 3 basic components:
 1. The Arduino Nano, which is the brains of this operation.
 2. The board + tweezers that will act as a switch. If the tweezers touch a part of the board it will close the connection and complete the circuit.
-3. The relays which will allow the TENS unit to shock the players.  
+3. The relays which will allow the TENS unit to shock the players.
 
-![Operation Game Circuit](../images/operation_shock_circuit.png)
+![Operation Game Circuit](assets/operation_shock_circuit.png)
 
-![Actual Circuit](../images/20210813_224606.jpg)
+![Actual Circuit](assets/20210813_224606.jpg)
 
 To build the circuit follow these steps:
 1. Solder together the circuit in the circuit diagram for the Tweezers, board, and the Arduino Nano
@@ -102,7 +102,7 @@ To build the circuit follow these steps:
 
 The code logic is represented in the flow chart below:
 
-![Operation Shock Code Flowchart](../images/operation_shock_code_explanation.png)
+![Operation Shock Code Flowchart](assets/operation_shock_code_explanation.png)
 
 Source code for [flowchart.js](https://flowchart.js.org/):
 ```flow
@@ -132,7 +132,7 @@ All game pieces are located in the folder `operation_game/game_pieces`.
 2. Tape copper tape around all the inner edges of the lip pieces (`*lip.stl` files)
 3. Tape copper tape around all the outer edges of the game pieces
 
-![](../images/20210813_220938.jpg)
+![](assets/20210813_220938.jpg)
 
 All `*.svg` files are the 2D drawings of each game piece. You can use these files to modify
 
@@ -142,7 +142,7 @@ All `*.svg` files are the 2D drawings of each game piece. You can use these file
 
 2. Copper tape the lip pieces conductive edges, creating a path to the bottom right corner of the board, where all the connections should connect to the wire.
 
-![backside of the board](../images/20210814_114225.jpg)
+![backside of the board](assets/20210814_114225.jpg)
 
 3. Connect the wire to the circuit
 

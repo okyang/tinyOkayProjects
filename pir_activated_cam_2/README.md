@@ -2,9 +2,9 @@
 
 This pir motion activated Raspberry Pi camera project will take and upload videos to the [Gofile - Free file sharing and storage platform](https://gofile.io/welcome) server via an HTTP address. The GoFile server will serve as an online database to save the video files and as a interface to browse through motion captured videos.
 
-<img title="" src="raspi-motion-activate-camera-project.assets/fc15c5347963f4479650ca3c53dbc6b7db47c6ce.png" alt="pir_cam_circuit-architecture.drawio.png" data-align="center">
+<img title="" src="assets/fc15c5347963f4479650ca3c53dbc6b7db47c6ce.png" alt="pir_cam_circuit-architecture.drawio.png" data-align="center">
 
-<img title="" src="raspi-motion-activate-camera-project.assets/8ef29cc3ca28c681cfed37d74fb3ba9307068461.jpg" alt="" data-align="center" width="564">
+<img title="" src="assets/8ef29cc3ca28c681cfed37d74fb3ba9307068461.jpg" alt="" data-align="center" width="564">
 
 **Features**
 - Senses motion
@@ -48,11 +48,11 @@ Following [Raspberry PI OS Install Instructions](https://www.raspberrypi.com/sof
 
 2. Install the Raspberry Pi Imager Software to your OS (Windows, Mac, or Linux)
 
-   ![2022-08-03-20-36-11-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-20-36-11-image.png)
+   ![2022-08-03-20-36-11-image.png](assets/2022-08-03-20-36-11-image.png)
 
 3. Open the Raspberry Pi Imager Software Program
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-20-36-42-image.png)
+   ![](assets/2022-08-03-20-36-42-image.png)
 
 4. Plug in your SD Card
 
@@ -60,21 +60,21 @@ Following [Raspberry PI OS Install Instructions](https://www.raspberrypi.com/sof
 
 6. Click **Raspberry Pi OS (32-bit)**
 
-   ![2022-08-03-20-37-48-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-20-37-48-image.png)
+   ![2022-08-03-20-37-48-image.png](assets/2022-08-03-20-37-48-image.png)
 
 7. Click **Choose Storage**
 
 8. Select your microSD card
 
-   ![2022-08-03-20-40-01-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-20-40-01-image.png)
+   ![2022-08-03-20-40-01-image.png](assets/2022-08-03-20-40-01-image.png)
 
 9. Hit the **Write** button
 
-   ![2022-08-03-20-40-32-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-20-40-32-image.png)
+   ![2022-08-03-20-40-32-image.png](assets/2022-08-03-20-40-32-image.png)
 
 10. Wait for writing to complete
 
-    ![2022-08-03-20-41-20-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-20-41-20-image.png)
+    ![2022-08-03-20-41-20-image.png](assets/2022-08-03-20-41-20-image.png)
 
 11. 🥳 OS is ready!
 
@@ -84,19 +84,19 @@ Following [Raspberry PI OS Install Instructions](https://www.raspberrypi.com/sof
 
 2. `sudo raspi-config`
 
-   ![2022-08-03-21-10-18-image.png](raspi-motion-activate-camera-project.assets/2022-08-03-21-10-18-image.png)
+   ![2022-08-03-21-10-18-image.png](assets/2022-08-03-21-10-18-image.png)
 
 3. Select **Interfacing Options**
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-21-31-11-image.png)
+   ![](assets/2022-08-03-21-31-11-image.png)
 
 4. Select **Legacy Camera Enable** to enable the camera
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-21-31-45-image.png)
+   ![](assets/2022-08-03-21-31-45-image.png)
 
 5. (Optional) Another thing I like to do is to enable ssh
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-21-40-32-image.png)
+   ![](assets/2022-08-03-21-40-32-image.png)
 
 6. Reboot the Raspberry Pi
 
@@ -104,7 +104,7 @@ Following [Raspberry PI OS Install Instructions](https://www.raspberrypi.com/sof
 
 We'll be creating the circuit as shown in the diagram below. to interact with the camera and the PIR motion sensor.
 
-<img src="raspi-motion-activate-camera-project.assets/2f390a9b5b37ccd0a6f1678b3308cab0e34e0048.png" title="" alt="pir_cam_circuit.drawio.png" data-align="center">
+<img src="assets/2f390a9b5b37ccd0a6f1678b3308cab0e34e0048.png" title="" alt="pir_cam_circuit.drawio.png" data-align="center">
 
 1. Connect the Camera Module to your Raspberry Pi (more details in [Getting Started with Picamera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2))
 
@@ -124,31 +124,31 @@ We'll be creating the circuit as shown in the diagram below. to interact with th
 
 3. Login to your account (yes login, Gofile makes the login system very simple)
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-00-00-image.png)
+   ![](assets/2022-08-13-23-00-00-image.png)
 
 4. Find your account token by clicking on **My Profile**
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-31-20-image.png)
+   ![](assets/2022-08-13-23-31-20-image.png)
 
 5. Locate your account token on the bottom of your profile page as shown below. Add `gofile_token = "<your_token>"` to the **my_secrets.py** file ( 🚨 Don't include <> in your string).
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-32-24-image.png)
+   ![](assets/2022-08-13-23-32-24-image.png)
 
 6. Create a new folder by clicking **Create folder**
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-57-31-image.png)
+   ![](assets/2022-08-13-23-57-31-image.png)
 
 7. Name your folder. (I called it **motion-camera**)
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-58-28-image.png)
+   ![](assets/2022-08-13-23-58-28-image.png)
 
 8. By default the new folder is a private folder, but if you ever need to change it click on the 3 dots (kebab menu icon?)
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-13-23-59-41-image.png)
+   ![](assets/2022-08-13-23-59-41-image.png)
 
 9. In the same 3 dots menu, click on **Info/Settings**. Add `gofile_folder = "<your_folder_id>"` to the **my_secrets.py** file ( 🚨 Don't include <> in your string).
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-14-00-16-48-image.png)
+   ![](assets/2022-08-14-00-16-48-image.png)
 
 ## 5 - Running the code
 
@@ -185,7 +185,7 @@ graph TD
 
 I'm going to use the following API from [Gofile API](https://gofile.io/api)
 
-![](raspi-motion-activate-camera-project.assets/2022-08-13-22-42-56-image.png)
+![](assets/2022-08-13-22-42-56-image.png)
 
 I want to use the `token` parameter so it gets associated with my account and not a random guest account that I'll probably lose access to.
 
@@ -201,7 +201,7 @@ Instructions from [Make Use Of - Set Static IP](https://www.makeuseof.com/raspbe
    ip a
    ```
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-22-13-52-image.png)
+   ![](assets/2022-08-03-22-13-52-image.png)
 
 2. Find your current **IP ADDRESS** - your current ip address
 
@@ -209,7 +209,7 @@ Instructions from [Make Use Of - Set Static IP](https://www.makeuseof.com/raspbe
    ip a
    ```
 
-   ![](raspi-motion-activate-camera-project.assets/2022-08-03-22-12-34-image.png)
+   ![](assets/2022-08-03-22-12-34-image.png)
 
 3. Find your **ROUTER_IP** - the gateway IP address for your router on the local network. Use the first ip address listed.
 
