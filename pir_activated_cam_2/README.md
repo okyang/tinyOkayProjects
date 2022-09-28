@@ -181,14 +181,6 @@ graph TD
     H --> C
 ```
 
-#### Saving to go file
-
-I'm going to use the following API from [Gofile API](https://gofile.io/api)
-
-![](assets/2022-08-13-22-42-56-image.png)
-
-I want to use the `token` parameter so it gets associated with my account and not a random guest account that I'll probably lose access to.
-
 ## Appendix
 
 ### A - Set Static IP address
