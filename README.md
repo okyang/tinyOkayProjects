@@ -7,3 +7,4 @@ A collection of simple Arduino and Raspberry Pi projects. Each project is in its
 - [**Operation Game that Shocks You**](./operation_game/README.md) - A twist on the classic operation game
 - [**AQI monitoring w/ Adafruit IO**](./AQI_monitoring_adafruitio/README.md) - Creating the PM2.5 Air Quality Sensor and Breadboard Adapter Kit - PMS500
 - [**LYWSD03MMC Monitoring w/ Adafruit IO**](./LYWSD03MMC_monitoring_adafruitio/README.md) - Sending temperature and humidity data from a LYWSD03MMC to Adafruit IO w/ Python
+- [**Is My Soil Moist**](https://github.com/okyang/is-my-soil-moist) - A soil moisture sensor and influx db project. Collect soil moisture data from your plants, send it to influx data, then manage moisture readings on a dashboard.
